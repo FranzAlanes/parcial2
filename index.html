@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladería Doña Nieve</title>
+</head>
+<body>
+<header>
+    <h1>Heladería Doña Nieve</h1>
+    <p>
+        Distrufa de los ricos helados...
+    </p>
+</header>
+<main>
+    <h2>Haz tu pedido</h2>
+    <form
+        id="form-helados"
+        novalidate
+        method="POST"
+        action="procesar.php"
+    >
+        <label for="nombre">
+            Nombre Completo:
+        </label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+        >
+        <br><br>
+        <label for="correo">
+            Correo electrónico:
+        </label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            required
+        >
+        <br><br>
+
+        <label for="sabores">
+            Qué sabor querés:
+        </label>
+        <textarea
+            id="sabores"
+            name="sabores"
+            rows="5"
+        ></textarea>
+        <br><br>
+        <button type="submit">
+            Enviar mi pedido
+        </button>
+        <p id="aviso-helados" class="aviso"></p>
+    </form>
+</main>
+<footer>
+    <p>
+        Parcial 2 - Franz Alanes Fuentes - 11 de agosto de 2026
+    </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
